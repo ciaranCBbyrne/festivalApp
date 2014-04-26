@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/planheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Planner Screen"
+        android:textColor="#ff9900"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/myFilter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/planheader"
+        android:ems="10"
+        android:hint="@string/some_hint"
+        android:textColor="#ff9900" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/dayheader"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myFilter2"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="DAY"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/stimeheader"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myFilter2"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/dayheader"
+        android:gravity="center"
+        android:text="TIME"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/bandheader"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myFilter2"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/stimeheader"
+        android:gravity="center"
+        android:text="BAND"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/stageheader"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myFilter2"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/bandheader"
+        android:gravity="center"
+        android:text="STAGE"
+        android:textColor="#ff9900" />
+
+    <TextView
+        android:id="@+id/ftimeheader"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myFilter2"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/stageheader"
+        android:gravity="center"
+        android:text="FINISH"
+        android:textColor="#ff9900" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/dayheader"
+        android:background="#000033"
+        android:divider="#ffffff"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>
